@@ -14,14 +14,19 @@
     padding: 0px;
 }
 
+html, body {
+    mi-height: 100vh;
+    background-color: darkgrey;
+}
+
 header {
     background-color: black;
-    height: 180px;
     color: white;
 }
 
 header h1 {
     text-align: center;
+    font-variant: small-caps;
     padding-top: 50px;
     font-family: var(--fonte1);
     font-size: 8vw;
@@ -32,6 +37,7 @@ header h2 {
     font-size: 2vh;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
+    padding-bottom: 50px;
 }
 
 header > h2 > a {
@@ -44,7 +50,7 @@ header > h2 > a:hover {
     text-decoration: underline;
 }
 
-main {
+/*main {
     margin: 60px auto auto 20px;
     font-family: var(--fonte2);
 }
@@ -52,44 +58,40 @@ main {
 main p {
     font-size: 2vw;
     line-height: 2em;
+}*/
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
 }
 
-#second {
+.normal {
     position: relative;
     background: url('../imagens/background001.jpg') right center no-repeat fixed;
     background-size: cover;
-    height: 480px;
+    height: 600px;
     margin: 50px auto 50px -20px;
 }
 
-.text1 {
+/*.image {
     position: absolute;
     color: white;
     border: 0px solid black;
-    width: 200px;
+    width: 500px;
     background-color: rgba(0, 0, 0, 0.373);
     padding: 10px;
+    border-radius: 5px;
 
     top: 150px;
+    transform: translate(5%);
 }
 
-#fifth {
-    background: url('../imagens/background002.jpg') right center no-repeat fixed;
-    background-size: cover;
-    height: 500px;
-    margin: 50px auto 50px -20px;
-}
-
-.text2 {
-    position: absolute;
-    color: white;
-    border: 0px solid black;
-    width: 200px;
-    background-color: rgba(0, 0, 0, 0.373);
-    padding: 10px;
-
-    top: 1570px;
-}
+.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.279);
+}*/
 
 footer {
     background-color: black;
@@ -98,4 +100,6 @@ footer {
     height: 80px;
     padding-top: 25px;
     margin-top: 30px;
+    font-family: var(--fonte1);
+    font-size: 1.5vw;
 }
