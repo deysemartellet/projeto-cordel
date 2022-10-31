@@ -5,8 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root {
-    --fonte1: 'Passion One', 'cursive';
-    --fonte2: 'Sriracha', 'cursive';
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', 'cursive';
+    --fonte3: 'Sriracha', 'cursive';
 }
 
 * {
@@ -15,8 +16,9 @@
 }
 
 html, body {
-    mi-height: 100vh;
+    min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -28,8 +30,8 @@ header h1 {
     text-align: center;
     font-variant: small-caps;
     padding-top: 50px;
-    font-family: var(--fonte1);
-    font-size: 8vw;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
 header h2 {
@@ -52,7 +54,7 @@ header > h2 > a:hover {
 
 /*main {
     margin: 60px auto auto 20px;
-    font-family: var(--fonte2);
+    font-family: var(--fonte3);
 }
 
 main p {
@@ -65,15 +67,33 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 .normal {
+    background-color: white;
+    color: black;
+}
+
+.image {
+    background-color: rgba(0, 0, 0, 0.373);
+    color: white;
+}
+
+.image > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.373);
+}
+
+/*.normal {
     position: relative;
     background: url('../imagens/background001.jpg') right center no-repeat fixed;
     background-size: cover;
     height: 600px;
     margin: 50px auto 50px -20px;
-}
+}*/
 
 /*.image {
     position: absolute;
@@ -99,7 +119,6 @@ footer {
     text-align: center;
     height: 80px;
     padding-top: 25px;
-    margin-top: 30px;
-    font-family: var(--fonte1);
-    font-size: 1.5vw;
+    font-family: var(--fonte2);
+    font-size: 2.5vw;
 }
